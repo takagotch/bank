@@ -1,0 +1,2 @@
+config.actice_record.observers = :order_observer, :audit_observer
+
