@@ -1,0 +1,18 @@
+<%= form_for(@picture,
+	     url: {action: 'create'},
+	     html: {multipart: true}) do |form| %>
+  <% if @picture.errors.any? %>
+    <h2><%= @picture.errors.count%>errors up</h2>
+   <ul>
+   <% @picture.errors.full_messages.each do |msg| %>
+     <li><%= msg %></li>
+   <% end %>
+   </ul>
+
+   Comments: <%= form.text_field("comment") %></br>
+   Images:   <%= form.file_field("uploaded_picture")%></br>
+
+   <%= submit_tag("File upleaded.")%>
+<% end %>
+
+

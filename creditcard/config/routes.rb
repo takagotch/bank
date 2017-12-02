@@ -21,3 +21,7 @@ Bank::Application.routes.draw do
   end
 end
 
+resource :pitcure do
+  get :download
+end
+
