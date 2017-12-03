@@ -1,0 +1,13 @@
+<%= @dynamic_content %>
+
+<%= cache do %>
+  <ul>
+    <% for article in Article.find_resent %>
+      <li><%= h(article.body) %></li>
+    <% end %>
+  </ul>
+<% end %>
+  
+<%= @dynamic_content %>
+
+
