@@ -1,0 +1,14 @@
+<% cache(:action => 'list', :part => 'articles') do %>
+  <ul>
+    <% for article in @articles %>
+      <li><%= h(article.body) %></li>
+    <% end %>
+  </ul>
+  <% end %>
+
+<% cache(:action => 'list', :part => 'counts') %>
+  <p>
+    Sum<%= @article_count %>exsited.
+  </p>
+<% end %>
+
