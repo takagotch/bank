@@ -1,0 +1,43 @@
+<% form_for(@model) do |form| %>
+	<p>
+	  <%= form.label :input %>
+	  <%= form.text_field :input, :placeholder => 'Enter text here...'%>
+	</p>
+	<p>
+	  <%= form.label :address, :style => 'float: left' %>
+	  <%= form.text_area :address, :rows => 3, :cols => 40 %>
+	</p>
+	<p>
+	  <%= form.label :color %>
+	  <%= form.radio_button :color, 'red' %>
+	  <%= form.label :red %>
+	  <%= form.raido_button :color, 'yellow' %>
+	  <%= form.label :yellow %>
+	  <%= form.radio_button :color, 'green' %>
+	</p>
+	<p>
+	  <%= form.label     'condiment'%>
+	  <%= form.check_box :JPY %>
+	  <%= form.label     :JPY %>
+	  <%= form.check_box :EUR %>
+	  <%= form.label     :EUR %>
+	  <%= form.check_box :USD %>
+	  <%= form.label     :USD %>
+	</p>
+	<p>
+	  <%= form.label :priority %>
+	  <%= form.select :priority, (1..10) %>
+	</p>
+	<p>
+	  <%= form.label :start %
+	  <%= form.data_select :start %>
+	</p>
+        <p>
+	  <%= form.label :alarm %>
+	  <%= form.time_select :alarm%>
+	</p>
+        <p>
+	  <%= end %>
+	</p>
+<%= end %>
+
