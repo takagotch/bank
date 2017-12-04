@@ -1,0 +1,32 @@
+en:
+        layouts:
+                application:
+                        title: "takagotch"
+                        home: "Home"
+                        questions: "Questions"
+                        news: "News"
+                        contact: "Contact"
+
+        store:
+                index:
+                        title_html: "tky"
+                        add_html: "add to cart"
+
+        carts:
+                cart:
+                        title: "tky"
+                        empty: "Empty cart"
+                        checkout: "Checkout"
+
+        number:
+                currency:
+                        format:
+                                unit: "$"
+                                precision: 2
+                                separator: "."
+                                delimiter: ","
+                                format: "%u%n"
+
+
+
+

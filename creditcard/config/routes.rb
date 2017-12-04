@@ -7,6 +7,8 @@ Bank::Application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
+  
+
   scope '(:locale)' do
     resources :users
 
@@ -29,6 +31,7 @@ Bank::Application.routes.draw do
       post 'login'    => :create
       delete 'logout' => :destroy
     end
+
 
 
     root to: 'store#index', as: 'store'
