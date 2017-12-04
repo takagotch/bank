@@ -39,3 +39,18 @@ def index
   end
 end
 
+def destroy
+	@user = User.find(params[:id])
+	begin
+		@user.destroy
+		flash[:notice] = "User#{@user.name}delete"
+	
+	rescue
+		flash[:notice] = e.message
+	end
+
+	respond_to do |formate|
+	  format.html { redirect_to users_url }
+	  format.json { head :ok }
+	end
+end
