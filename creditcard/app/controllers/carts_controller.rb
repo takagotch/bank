@@ -15,4 +15,13 @@ def show
   end
 end
 
+def destroy
+  @cart = current_cart
+  @cart.destroy
+  session[:cart_id] = nil
+  respond_to do |format|
+    format.html { redirect_to store_url }
+    format.json { head :ok }
+  end
+end
 

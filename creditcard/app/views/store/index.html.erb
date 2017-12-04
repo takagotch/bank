@@ -1,0 +1,19 @@
+<% if notice %>
+<p id="notice"><%= notice %></id>
+<% end %>
+<h1>Catalog</h1>
+
+<% @products.each do |product| %>
+  <div class="entry">
+    <%= image_tag(product.image_url) %>
+    <h3><%= product.title %></h3>
+    <%= sanitize(product.desctiption) %>
+    <div class="price_line">
+      <span class="price"><%= number_to_curency(product.price) %></span>	
+      <%= button_to 'Cart in', line_items_path(product_id: product),
+        remote: true %>
+    </div>
+  </div>
+<% end %>
+
+
