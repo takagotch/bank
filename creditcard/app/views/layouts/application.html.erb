@@ -8,8 +8,18 @@
 	</head>
 	<body class="<%= controller.controller_name %>">
 	<div id="columns">
+		<div id="banner">
+			<%= form_tag store_path, class: 'locale' do %>
+                        <%= select_tag 'set_locale',
+				options_for_select(LANGUAGES, I18n.locale.to_s),
+				onchange: 'this.form.submit()' %>
+			<%= submit_tag 'submit' %>>
+			<%= javasctipt_tag "$('.locale input').hide()" %>
+		<% end %>
+		
+		</div>
 		<%= image_tag("log.png") %>
-		<%= @page_title || "Takagotch" %>
+		<%= @page_title || "t('.title')" %>
 	</div>
 	<div id="columns">
 		<div id="side">

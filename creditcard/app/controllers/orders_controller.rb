@@ -17,7 +17,7 @@ def create
       session[:cart_id] = nil
       OrderNotifier.received(@order).deliver
       fomat.html { redirect_to store_url, notice:
-        'Thx order'}
+		   I18n.t('.thanks')}
       format.json { render json: @order, status: :created,
         location: @order }
     else

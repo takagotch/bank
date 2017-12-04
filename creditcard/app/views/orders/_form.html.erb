@@ -1,12 +1,15 @@
 <% form_for(@order) do |f| %>
   <% if @order.errors.any? %>
     <div id="error_explanation">
-    <h2><%= pluralize(@order.errors.count, "errror" )%>
-      prohibited this order form being saved:</h2>
-      
+	    <h2><%=raw t('errors.template.header', count: @order.errros.count,
+		  model: t('activerecord.models.order')) %></h2>
+	    <p><%= t('errors.template.body') %></p>
+
+	   
       <ul>
       <% @order.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>	      
+	      <li><%= msg %></li>	      
+      <% end %>
       </ul>
     </div>
   <% end %>
@@ -16,8 +19,8 @@
     <% f.text_field :name, size: 40 %>
   </div>
   <div class="field">
-    <% f.label :address %><br/>
-    <% f.text_area :address, cols: 40 %>
+    <% f.label :address, t('.address_html') %><br/>
+    <% f.text_area :address, rows: 3, cols: 40 %>
   </div>
 
   <div class="field">
@@ -28,11 +31,11 @@
   <div class="field">
     <% f.label :pay_type %><br/>
     <% f.text_field :pay_type, Order::PAYMENT_TYPES,
-                     prompt: 'select paymenttypes' %>
+                     prompt: 't('.pay_prompt_html')' %>
   </div>
 
   <div class="actions">
-    <% f.submit 'order' %>
+    <% f.submit t('.submit') %>
   </div>
 
 <% end %>

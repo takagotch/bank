@@ -27,6 +27,41 @@ es:
                                 separator: ","
                                 delimiter: "."
                                 format: "%n&nbsp;%u"
+         orders:
+                new:
+                        legend: "Please Enter"
+                form:
+                        name: "tky"
+                        address_html: "Address"
+                        email: "E-mail"
+                        pay_type: "Pay with"
+                        pay_prompt_html: "Select method"
+                        submit: "Place Order"
+        
+         activerecord:
+                 errors:
+                         messages:
+                                 inclusion: "no "
+                                 blank: "no "
+                         errors:
+                                 template: "problem "
+                                 body: 
+                                 header:
+                                         one: "1 eer"
+                                         other: "%{count} %{model}"
+
+                  models:
+                          order: "order"
+                  attributes:
+                          order:
+                                  address: "addr"
+                                  name: "name"
+                                  email: "E-mail"
+                                  pay_type: "pay type"
+
+                                  thanks: "Thx"
+
+                               
 
 
 
