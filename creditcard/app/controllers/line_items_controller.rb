@@ -15,4 +15,8 @@ def create
   end
 end
 
+class LineItemsController < ApplicationController
+  skip_before_filter :authorize, only: :create
+end
+
 

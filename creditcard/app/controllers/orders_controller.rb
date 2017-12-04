@@ -29,3 +29,7 @@ def create
   end
 end
 
+class OrdersController < ApplicationController
+  skip_before_filter :authorize, only: [:new, :create]
+end
+

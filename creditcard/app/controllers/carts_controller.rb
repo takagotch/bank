@@ -25,3 +25,7 @@ def destroy
   end
 end
 
+class CartsController < ApplicationController
+  skip_before_filter :authorize, only: [:create, :update, :destroy]
+end
+

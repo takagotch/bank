@@ -11,7 +11,10 @@ class StoreController < ApplicationController
 #    latest      = Product.latest
 #    fresh_when etag: latest, last_modified: lastest.created_at.utc
 #    expires_in 10minutes, public: true
-#  end
+  end
 end
 
+class SessionController < ApplicationController
+  skip_before_filter :authorize
+end
 

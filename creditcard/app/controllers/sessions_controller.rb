@@ -13,3 +13,8 @@ def destroy
   redirect_to store_url, notice: "Logout"
 end
 
+
+class SessionsController < ApplicationController
+  skip_before_filter :authorize
+end
+
