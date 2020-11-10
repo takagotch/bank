@@ -7,6 +7,16 @@
 ###### 大阪府制度
 ###### https://drive.google.com/drive/u/0/folders/1YDiHQ0NKz8G6lxEJ9C3WjjqwJsc1KM9a
 
+###### 下書き
+###### https://drive.google.com/drive/u/0/folders/1Yubcd4mEbbP3FAlyU3BrolAEiCiDylEC
+
+######
+######
+######
+
+
+
+
 ---
 
 
