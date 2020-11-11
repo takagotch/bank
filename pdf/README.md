@@ -14,7 +14,7 @@
 ###### https://www.sansokan.jp/kinyu/
 
 ###### 経済産業省　中小企業庁
-###### 
+###### https://www.chusho.meti.go.jp/keiei/chiiki/index.html
 
 
 
