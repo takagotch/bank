@@ -3,6 +3,16 @@
 ###### https://docs.google.com/document/d/1vE-gCGtvBANVFI1x4Ivy9RC7sBGGzgJmRCS-O9TckmY/edit
 ---
 
+###### jGrants
+https://drive.google.com/drive/folders/1nATy6GMHqGVCvpz66acQEJd7hxqFlGVc
+
+###### Gbiz ID
+https://gbiz-id.go.jp/top/
+mail
+pass
+
+
+
 
 ###### 大阪府制度
 ###### https://drive.google.com/drive/u/0/folders/1YDiHQ0NKz8G6lxEJ9C3WjjqwJsc1KM9a
